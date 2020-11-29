@@ -5,4 +5,5 @@
 <p align="center"><i>A Telegram Bot to Anonymize the Sender of Messages or Media.</i></p>
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/prothinkergang/anonymous-bot)
+# DEPLOY TO HEROKU
+* [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/prothinkergang/anonymous-bot)
