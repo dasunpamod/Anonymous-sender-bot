@@ -28,10 +28,10 @@ DEFAULT_START = ("Hi, I am ANONYMOUS SENDER BOT.\n\n"
                  "By Joining the Support Channel👇👇")
 
 
-if Credentials.START_MESSAGE is None:
-  START_TEXT = DEFAULT_START
-else:
+if Credentials.START_MESSAGE is not None:
   START_TEXT = Credentials.START_MESSAGE
+else:
+  START_TEXT = DEFAULT_START
   
 @client.on(events.NewMessage)
 async def startmessage(event):
