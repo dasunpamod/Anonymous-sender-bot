@@ -1,0 +1,31 @@
+{
+  "name": "Anonymous Sender bot",
+  "description": "A bot to hide the Sender of Messages",
+  "repository": "https://github.com/ProThinkerGang/AnonymousBot",
+  "logo": "",
+  "keywords": ["telegram", "Anonymous Sender", "Hide sender","telegram bot"],
+  "env": {
+     "BOT_TOKEN": {
+      "description": "Your Bot token from @Botfather",
+      "value": ""
+    },
+    "API_ID": {
+      "description": "Your API_ID from https://my.telegram.org/apps ",
+      "value": ""
+    },
+    "START_MESSAGE": {
+      "description": "Start Message of Bot. Left Empty for DEFAULT",
+      "required": false,
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Your API_HASH from https://my.telegram.org/apps",
+      "value": ""
+    }
+   },
+   "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
