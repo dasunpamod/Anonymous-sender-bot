@@ -39,8 +39,9 @@ async def startmessage(event):
     if '/start' in event.raw_text:
       ok = event.chat_id
       await client.send_message(event.chat_id,
-                                message=f"{START_TEXT}",
-                                buttons=[[Button.url("✤ SUPPORT CHANNEL ✤","t.me/Prothinkergang")]])                                                                 
+                                message=START_TEXT,
+                                buttons=[[Button.url("✤ Deploy Your Own Bot ✤","https://heroku.com/deploy?template=https://github.com/prothinkergang/anonymous-bot")],
+                                         [Button.url("✤ SUPPORT CHANNEL ✤","t.me/Prothinkergang")]])                                                                 
     if event.message.media:
       await client.send_message(event.chat_id,file=event.message.media)
     else:
