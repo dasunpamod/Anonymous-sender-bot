@@ -30,7 +30,7 @@ DEFAULT_START = ("Hi, I am ANONYMOUS SENDER BOT.\n\n"
 if Credentials.START_MESSAGE is None:
   START_MESSAGE = DEFAULT_START
 else:
-  START_MESSAGE = START_MESSAGE
+  START_MESSAGE = Credentials.START_MESSAGE
   
 @client.on(events.NewMessage)
 async def startmessage(event):
