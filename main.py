@@ -27,17 +27,18 @@ DEFAULT_START = ("Hi, I am ANONYMOUS SENDER BOT.\n\n"
                  "Please Support The Developer\n"
                  "By Joining the Support Channel👇👇")
 
+
 if Credentials.START_MESSAGE is None:
-  START_MESSAGE = DEFAULT_START
+  START_TEXT = DEFAULT_START
 else:
-  START_MESSAGE = Credentials.START_MESSAGE
+  START_TEXT = Credentials.START_MESSAGE
   
 @client.on(events.NewMessage)
 async def startmessage(event):
   try:
     if '/start' in event.raw_text:
       ok = event.chat_id
-      await client.send_message(event.chat_id,f"{START_MESSAGE}",
+      await client.send_message(event.chat_id,f"{START_TEXT}",
                                 buttons=[[Button.url("✤ SUPPORT CHANNEL ✤","t.me/Prothinkergang")]])                                                                 
     if event.message.media:
       await client.send_message(event.chat_id,file=event.message.media)
