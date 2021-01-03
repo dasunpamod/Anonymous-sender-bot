@@ -15,6 +15,3 @@
 - `API_ID` - Get This Value from [my.telegram.org](my.telegram.org)
 - `API_HASH` - Get This Value from [my.telegram.org](my.telegram.org)
 - `START_MESSAGE` - A Optional Var If want to Change The Start Message.
-
-
-`CONTRIBUTIONS AND SUGGESTIONS ARE WELCOMED !!`
