@@ -20,10 +20,6 @@ DEFAULT_START = ("Hi, I am ANONYMOUS SENDER BOT.\n\n"
                  "Just Forward me Some messages or\n"
                  "media and I will Anonymize the\n"
                  "sender.\n\n"
-                 "**Note -** __We Dont Promote Circulation of\n__"
-                 "__Copyright Contents. This Bot is\n__"
-                 "__Created for Educational Purpose\n__"
-                 "__Only !!\n\n__"
                  "Please Support The Developer\n"
                  "By Joining the Support Channel👇👇")
 
@@ -40,8 +36,8 @@ async def startmessage(event):
       ok = event.chat_id
       await client.send_message(event.chat_id,
                                 message=START_TEXT,
-                                buttons=[[Button.url("✤ Deploy Your Own Bot ✤","https://heroku.com/deploy?template=https://github.com/prothinkergang/anonymous-bot")],
-                                         [Button.url("✤ SUPPORT CHANNEL ✤","t.me/Prothinkergang")]])                                                                 
+                                buttons=[[Button.url("🤖 Deploy Your Own Bot 🤖","https://heroku.com/deploy?template=https://github.com/ImJanindu/Anonymous-bot")],
+                                         [Button.url("📢 SUPPORT CHANNEL 📢","https://t.me/ImJanindu")]])                                                                 
     if event.message.media:
       await client.send_message(event.chat_id,file=event.message.media)
     else:
