@@ -36,7 +36,7 @@ async def startmessage(event):
       await client.send_message(event.chat_id,
                                 message=START_TEXT,
                                 buttons=[[Button.url("🤖 Deploy a clone 🤖","https://heroku.com/deploy?template=https://github.com/dasunpamod/Anonymous-sender-bot/")],
-                                         [Button.url("📢 Support Channel 📢","#")],
+                                         [Button.url("📢 Support Channel 📢","https://t.me/maxweb_chat")],
                                          [Button.url("👨‍💻 Contact Owner 👨‍💻","https://t.me/dasun_pamod")]]) 
                                                                                                          
     if event.message.media:
